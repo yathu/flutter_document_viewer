@@ -54,8 +54,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     String previewUrl = baseUrl+fileUrl;
 
-    print(previewUrl);
-
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
