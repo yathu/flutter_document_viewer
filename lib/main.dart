@@ -48,6 +48,9 @@ class _MyHomePageState extends State<MyHomePage> {
   String baseUrl = 'https://docs.google.com/viewer?url=';
   String fileUrl = 'https://file-examples.com/storage/feb2e515cc6339d7ba1ffcd/2017/02/file-sample_100kB.doc';
 
+  //preview by office
+  String officeUrl = 'https://view.officeapps.live.com/op/embed.aspx?src=https://file-examples.com/storage/feb2e515cc6339d7ba1ffcd/2017/02/file-sample_100kB.doc';
+
   Widget build(BuildContext context) {
     String previewUrl = baseUrl+fileUrl;
 
@@ -59,7 +62,8 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body:   Center(
         child: WebView(
-          initialUrl: previewUrl,
+          // initialUrl: previewUrl,
+          initialUrl: officeUrl,
           javascriptMode: JavascriptMode.unrestricted,
         ),
       ),
